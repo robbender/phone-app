@@ -36,4 +36,33 @@ class UsersController extends Controller
         return redirect('/users');
 
     }
+
+    public function edit()
+    {
+
+        return view('users.edit');
+
+    }
+
+    public function edit()
+    {
+
+        $user = User::find($id);
+
+        return view('users.edit', compact('user'));
+        
+    }
+
+    public function update()
+    {
+
+        
+        
+    }
+
+    public function destroy()
+    {
+
+        
+    }
 }
