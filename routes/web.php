@@ -15,8 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/users', 'UsersController@index');
+Route::resource('users', 'UsersController');
 
-Route::post('/users', 'UsersController@store');
+// Route::get('/users', 'UsersController@index');
 
-Route::get('/users/create', 'UsersController@create');
+// Route::post('/users', 'UsersController@store');
+
+// Route::get('/users/create', 'UsersController@create');
