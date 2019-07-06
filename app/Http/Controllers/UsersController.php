@@ -25,7 +25,15 @@ class UsersController extends Controller
 
     public function store()
     {
+        $user = new User();
 
-        
+        $user->name = request('name');
+        $user->position = request('postition');
+        $user->phone = request('phone');
+
+        $user->save();
+
+        return redirect('/users');
+
     }
 }

@@ -9,6 +9,8 @@
 
     <form method="POST" action="/users">
 
+        {{ csrf_field() }}
+
         <div>
 
             <input type="text" name="name" placeholder="Name">
