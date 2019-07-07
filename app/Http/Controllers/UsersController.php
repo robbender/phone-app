@@ -42,14 +42,22 @@ class UsersController extends Controller
 
         $user = User::find($id);
 
-        return view('users.edit', compact('users'));
+        return view('users.edit', compact('user'));
         
     }
 
-    public function update()
+    public function update($id)
     {
 
-        
+        $user = User::find($id);
+
+        $user->name = request('name');
+        $user->position = request('position');
+        $user->phone = request('phone');
+
+        $user->save();
+
+        return redirect('/users');
         
     }
 

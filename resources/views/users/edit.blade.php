@@ -5,7 +5,9 @@
     <h1 class="title">Edit Contact</h1>
 
 
-    <form action="">
+<form method="POST" action="/users/{{ $user->id }}">
+        {{ method_field('PATCH') }}
+        {{ csrf_field() }}
 
         <div class="field">
 
@@ -13,7 +15,7 @@
 
         <div class="control">
 
-            <input type="text" class="input" name="name" placeholder="Name">
+        <input type="text" class="input" name="name" placeholder="Name" value="{{ $user->name }}">
 
         </div>
         
@@ -23,7 +25,7 @@
     
         <div class="control">
     
-            <input type="text" class="input" name="position" placeholder="Position">
+            <input type="text" class="input" name="position" placeholder="Position" value="{{ $user->position }}">
     
          </div>
 
@@ -33,7 +35,7 @@
         
         <div class="control">
         
-            <input type="text" class="input" name="phone" placeholder="Phone">
+        <input type="text" class="input" name="phone" placeholder="Phone" value="{{ $user->phone }}">
         
         </div>
 
