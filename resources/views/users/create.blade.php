@@ -1,43 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+@extends('layout')
 
-    <title>Create New User</title>
-</head>
-<body>
-    <h1>Create New User</h1>
+@section('content')
+
+    <h1 class="title">Create New User</h1>
 
     <form method="POST" action="/users">
 
-        {{ csrf_field() }}
+        @csrf
 
-        <div>
+        <div class="field">
 
-            <input type="text" name="name" placeholder="Name">
+            <input class="input" type="text" name="name" placeholder="Name">
 
         </div>
 
-        <div>
+        <div class="field">
 
-             <input type="text" name="position" placeholder="Position">
+             <input class="input" type="text" name="position" placeholder="Position">
     
         </div>
 
-        <div>
+        <div class="field">
 
-            <input type="text" name="phone" placeholder="Phone">
+            <input class="input" type="text" name="phone" placeholder="Phone">
        
         </div>
 
-        <div>
+        <div class="control">
 
             <button type="submit">Add User</button>
 
         </div>
 
-
-
-
     </form>
-</body>
-</html>
+
+
+    @endsection 

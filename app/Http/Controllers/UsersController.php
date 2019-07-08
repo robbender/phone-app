@@ -69,7 +69,7 @@ class UsersController extends Controller
 
     public function destroy(User $user)
     {
-        $project->delete();
+        $user->delete();
 
         return redirect('/users');
     }
