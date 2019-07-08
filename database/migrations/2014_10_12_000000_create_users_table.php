@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('position');
             $table->string('phone');
+            $table->
             
             $table->timestamps();
         });

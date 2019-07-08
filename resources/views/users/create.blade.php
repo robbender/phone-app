@@ -2,7 +2,8 @@
 
 @section('content')
 
-    <h1 class="title">Create New User</h1>
+    <h1 class="title is-size-1">Create New Contact</h1>
+    <br>
 
     <form method="POST" action="/users">
 
@@ -24,6 +25,12 @@
 
             <input class="input" type="text" name="phone" placeholder="Phone">
        
+        </div>
+
+        <div>
+
+            
+
         </div>
 
         <div class="control">

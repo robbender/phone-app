@@ -4,12 +4,13 @@
   
     <title>Directory</title>
 
-    <h1 class="title">Directory</h1>
+    <h1 class="title is-size-1">Directory</h1>
 
     @foreach ($users as $user)
 
     <div class="card">
         <div class="card-header-title is-size-1">
+            <br>
             <p>
                 <a href="/users/{{ $user->id }}">{{ $user->name }}</a>
             </p>
@@ -21,12 +22,12 @@
 
         <div class="card-content">
 
-        <p class="subtitle is-size-4">
+        <p class="subtitle is-size-4 has-text-weight-semibold">
             Position:
             {{ $user->position }}
         </p>
 
-        <p class="subtitle is-size-4">
+        <p class="subtitle is-size-4 has-text-weight-semibold">
             Phone:
             {{ $user->phone }}
         </p>
