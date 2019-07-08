@@ -16,6 +16,13 @@ class UsersController extends Controller
 
     }
 
+    public function show(User $user)
+    {
+
+        return view('users.show', compact('user'));
+
+    }
+
     public function create()
     {
 
@@ -25,45 +32,44 @@ class UsersController extends Controller
 
     public function store()
     {
-        $user = new User();
+        User::create(request(['name', 'position', 'phone']));
+        // $user = new User();
 
-        $user->name = request('name');
-        $user->position = request('postition');
-        $user->phone = request('phone');
+        // $user->name = request('name');
+        // $user->position = request('position');
+        // $user->phone = request('phone');
 
-        $user->save();
+        // $user->save();
 
         return redirect('/users');
 
     }
 
-    public function edit($id)
+    public function edit(User $user)
     {
-
-        $user = User::findOrFail($id);
 
         return view('users.edit', compact('user'));
         
     }
 
-    public function update($id)
+    public function update(User $user)
     {
 
-        $user = User::findOrFail($id);
+        $user->update(request(['name', 'position', 'phone']));
 
-        $user->name = request('name');
-        $user->position = request('position');
-        $user->phone = request('phone');
+        // $user->name = request('name');
+        // $user->position = request('position');
+        // $user->phone = request('phone');
 
-        $user->save();
+        // $user->save();
 
         return redirect('/users');
         
     }
 
-    public function destroy($id)
+    public function destroy(User $user)
     {
-        User::findOrFail($id)->delete();
+        $project->delete();
 
         return redirect('/users');
     }

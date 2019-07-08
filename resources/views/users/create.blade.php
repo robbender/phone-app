@@ -19,7 +19,7 @@
 
         <div>
 
-             <input type="text" name="postition" placeholder="Position">
+             <input type="text" name="position" placeholder="Position">
     
         </div>
 

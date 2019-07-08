@@ -9,9 +9,17 @@
 
     @foreach ($users as $user)
 
-        <li>{{ $user->name }}</li>
-        <li>{{ $user->position }}</li>
-        <li>{{ $user->phone }}</li>
+        <p>
+        <a href="/users/{{ $user->id }}">{{ $user->name }}</a>
+        </p>
+
+        <p>
+            {{ $user->position }}
+        </p>
+
+        <p>
+            {{ $user->phone }}
+        </p>
 
     @endforeach
 
