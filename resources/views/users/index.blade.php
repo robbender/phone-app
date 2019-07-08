@@ -35,11 +35,15 @@
                         </div>
                         </div>
                     </form>
-                
-              </div>
+                </div>
         </div>
     </div>
-
+    <br>
     @endforeach
+    <br>
+
+    <p class="control">
+        <a href="/users/create" class="button is-info is-pulled-right">New Contact</a>
+    </p>
 
     @endsection

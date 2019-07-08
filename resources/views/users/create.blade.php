@@ -28,7 +28,7 @@
 
         <div class="control">
 
-            <button type="submit">Add User</button>
+            <button type="submit" class="button is-info">Add User</button>
 
         </div>
 
