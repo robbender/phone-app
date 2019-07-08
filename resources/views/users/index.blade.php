@@ -9,17 +9,25 @@
     @foreach ($users as $user)
 
     <div class="card">
-        <div class="card-body">
+        <div class="card-header-title">
+            <p>
+                <a href="/users/{{ $user->id }}">{{ $user->name }}</a>
+            </p>
+        </div>
 
-        <p>
-        <a href="/users/{{ $user->id }}">{{ $user->name }}</a>
-        </p>
+        <div class="card-image">
+
+        </div>
+
+        <div class="card-content">
 
         <p class="subtitle">
+            Position:
             {{ $user->position }}
         </p>
 
         <p class="subtitle">
+            Phone:
             {{ $user->phone }}
         </p>
         <div class="field is-grouped is-grouped-right">
