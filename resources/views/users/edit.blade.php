@@ -38,7 +38,7 @@
         <input type="text" class="input" name="phone" placeholder="Phone" value="{{ $user->phone }}">
         
         </div>
-
+        <br>
         <div class="field">
             <div class="control">
 
@@ -59,7 +59,7 @@
         <div class="field">
 
             <div class="control">
-                <button type="submit" class="button">Delete</button>
+                <button type="submit" class="button is-danger">Delete</button>
 
             </div>
         </div>
