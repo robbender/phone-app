@@ -6,8 +6,8 @@
 
 
 <form method="POST" action="/users/{{ $user->id }}">
-        {{ method_field('PATCH') }}
-        {{ csrf_field() }}
+    @method('PATCH')
+    @csrf
 
         <div class="field">
 
@@ -42,7 +42,7 @@
         <div class="field">
             <div class="control">
 
-                <button type="submit" class="button is-link">Update Contact</button>
+                <button type="submit" class="button is-link">Update</button>
 
             </div>
 
@@ -50,6 +50,19 @@
 
         </div>
 
+    </form>
+
+<form method="POST" action="/users/{{ $user->id }}">
+       @method('DELETE')
+       @csrf
+
+        <div class="field">
+
+            <div class="control">
+                <button type="submit" class="button">Delete</button>
+
+            </div>
+        </div>
     </form>
     
 

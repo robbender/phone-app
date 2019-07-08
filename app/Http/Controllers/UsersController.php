@@ -40,7 +40,7 @@ class UsersController extends Controller
     public function edit($id)
     {
 
-        $user = User::find($id);
+        $user = User::findOrFail($id);
 
         return view('users.edit', compact('user'));
         
@@ -49,7 +49,7 @@ class UsersController extends Controller
     public function update($id)
     {
 
-        $user = User::find($id);
+        $user = User::findOrFail($id);
 
         $user->name = request('name');
         $user->position = request('position');
@@ -61,9 +61,10 @@ class UsersController extends Controller
         
     }
 
-    public function destroy()
+    public function destroy($id)
     {
+        User::findOrFail($id)->delete();
 
-        
+        return redirect('/users');
     }
 }
