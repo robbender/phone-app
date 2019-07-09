@@ -35,8 +35,9 @@ class UsersController extends Controller
         User::create(request()->validate([
             'name' => ['required', 'min:2', 'max:120'],
             'position' => ['required', 'min:2'],
-            'phone' => ['required', 'min:11', 'numeric']
-
+            'phone' => ['required', 'min:11', 'numeric'],
+            'image' => ['image', 'nullable', 'max:1999'],
+            // 'size' => ['']
         ]));
 
         // User::create($attributes);

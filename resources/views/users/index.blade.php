@@ -37,7 +37,8 @@
         </div>
 
         <div class="card-image">
-
+            <img src="" alt="">
+            
         </div>
 
         <div class="card-content">

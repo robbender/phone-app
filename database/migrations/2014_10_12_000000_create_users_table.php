@@ -16,11 +16,10 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->Increments('id');
             $table->string('name');
-            $table->string('image')
+            $table->string('image');
             $table->string('position');
             $table->string('phone');
-            $table->
-            
+            // $table->string('size');
             $table->timestamps();
         });
     }

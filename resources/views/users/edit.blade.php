@@ -39,6 +39,14 @@
         
         </div>
         <br>
+
+        <div class="control">
+        
+            <input type="file" class="input is-large" name="image" placeholder="Image" value="{{ $user->image }}">
+                
+        </div>
+
+        <br>
         <div class="field">
             <div class="control">
 
