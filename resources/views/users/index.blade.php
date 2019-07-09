@@ -6,6 +6,23 @@
 
     <h1 class="title is-size-1">Directory</h1>
 
+
+    <div class="is-grouped is-pulled-right">
+    <div class="field has-addons">
+            <div class="control is-horizontal">
+              <input class="input is-large" type="text" placeholder="Find a contact">
+            </div>
+            <div class="control">
+              <a class="button is-info is-large">
+                Search
+              </a>
+            </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
     @foreach ($users as $user)
 
     <div class="container">
@@ -13,6 +30,7 @@
     <div class="card">
         <div class="card-header-title is-size-1">
             <br>
+            
             <p>
                 <a href="/users/{{ $user->id }}">{{ $user->name }}</a>
             </p>
