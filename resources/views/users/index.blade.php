@@ -8,6 +8,8 @@
 
     @foreach ($users as $user)
 
+    <div class="container">
+
     <div class="card">
         <div class="card-header-title is-size-1">
             <br>
@@ -49,12 +51,13 @@
                 </div>
         </div>
     </div>
+    </div>
     <br>
     @endforeach
     <br>
 
     <p class="control">
-        <a href="/users/create" class="button is-info is-pulled-right">New Contact</a>
+        <a href="/users/create" class="button is-info is-pulled-right is-large">New Contact</a>
     </p>
 
     @endsection

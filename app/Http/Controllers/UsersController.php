@@ -32,7 +32,15 @@ class UsersController extends Controller
 
     public function store()
     {
+        request()->validate([
+            'name' => 'required',
+            'position' => 'required',
+            'phone' => 'required'
+
+        ]);
+
         User::create(request(['name', 'position', 'phone']));
+        
         // $user = new User();
 
         // $user->name = request('name');

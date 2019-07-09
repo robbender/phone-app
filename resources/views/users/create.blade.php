@@ -11,20 +11,35 @@
 
         <div class="field">
 
-            <input class="input" type="text" name="name" placeholder="Name">
+            <label class="label" for="name"></label>
 
+            <div class="control">
+
+                <input type="text" class="input {{ $errors->has('name') ? 'is-danger' : '' }}" name="name" placeholder="name">
+
+            </div>
         </div>
 
         <div class="field">
 
-             <input class="input" type="text" name="position" placeholder="Position">
-    
+             <label class="label" type="text" name="position" placeholder="Position" required></label>
+
+            <div class="control">
+
+                <input class="input {{ $errors->has('position') ? 'is-danger' : '' }}" type="text" placeholder="position">
+                
+            </div>
         </div>
 
         <div class="field">
 
-            <input class="input" type="text" name="phone" placeholder="Phone">
-       
+            <label class="label is-large" type="text" name="phone" placeholder="Phone" required></label>
+
+            <div class="control">
+
+                <input class="input {{ $errors->has('phone') ? 'is-danger' : '' }}" type="text" placeholder="phone">
+                
+            </div>
         </div>
 
         <div>
@@ -33,11 +48,32 @@
 
         </div>
 
-        <div class="control">
+        <div class="field">
 
-            <button type="submit" class="button is-info">Add User</button>
+            <div class="control">
 
+                <button type="submit" class="button is-info is-large">Add User</button>
+
+            </div>
         </div>
+
+        @if ($errors->any())
+
+        <div class="notification is-danger">
+
+            <ul>
+                @foreach ($errors->all() as $error)
+
+                    <li>{{ $error }}</li>
+
+                @endforeach
+
+
+            </ul>
+             
+        </div>
+
+        @endif
 
     </form>
 
