@@ -44,7 +44,7 @@
 
         <div class="field">
                 {{-- <label class="label is-large" type="text" name="image"></label> --}}
-                <input type="file" class="input is-large" {{ $errors->has('image') ? 'is-danger' : '' }}" name="image" placeholder="Image" required>
+                <input type="file" class="input is-large" name="image" placeholder="Image">
         
         </div>
         <br>

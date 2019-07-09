@@ -36,7 +36,7 @@ class UsersController extends Controller
             'name' => ['required', 'min:2', 'max:120'],
             'position' => ['required', 'min:2'],
             'phone' => ['required', 'min:11', 'numeric'],
-            'image' => ['image', 'nullable', 'max:1999'],
+            'image' => ['max:1999'],
             // 'size' => ['']
         ]));
 
@@ -64,7 +64,7 @@ class UsersController extends Controller
     public function update(User $user)
     {
 
-        $user->update(request(['name', 'position', 'phone']));
+        $user->update(request(['name', 'position', 'phone', 'image']));
 
         // $user->name = request('name');
         // $user->position = request('position');
