@@ -82,7 +82,7 @@
     <footer class="footer">
             <div class="content has-text-centered">
               <p>
-                <strong>Contact Directory</strong> by <a href="">Web Services</a>.
+                <strong>Directory</strong> by <a href="">Web Services</a>.
                 2019
               </p>
             </div>
