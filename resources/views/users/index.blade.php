@@ -77,5 +77,15 @@
     <p class="control">
         <a href="/users/create" class="button is-info is-pulled-right is-large">New Contact</a>
     </p>
+    <br>
+    <br>
+    <footer class="footer">
+            <div class="content has-text-centered">
+              <p>
+                <strong>Contact Directory</strong> by <a href="">Web Services</a>.
+                2019
+              </p>
+            </div>
+          </footer>
 
     @endsection
