@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1 class="title">Edit Contact</h1>
+    <h1 class="title is-size-1">Edit Contact</h1>
 
 
 <form method="POST" action="/users/{{ $user->id }}">
@@ -42,7 +42,7 @@
         <div class="field">
             <div class="control">
 
-                <button type="submit" class="button is-link is-large">Update</button>
+                <button type="submit" class="button is-info is-large">Update</button>
 
             </div>
 
