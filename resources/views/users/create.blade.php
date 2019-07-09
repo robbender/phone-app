@@ -15,7 +15,7 @@
 
             <div class="control">
 
-                <input type="text" class="input {{ $errors->has('name') ? 'is-danger' : '' }}" name="name" placeholder="name">
+            <input type="text" class="input is-large {{ $errors->has('name') ? 'is-danger' : '' }}" name="name" placeholder="name" value="{{ old('name') }}">
 
             </div>
         </div>
@@ -26,7 +26,7 @@
 
             <div class="control">
 
-                <input class="input {{ $errors->has('position') ? 'is-danger' : '' }}" type="text" placeholder="position">
+                <input class="input is-large {{ $errors->has('position') ? 'is-danger' : '' }}" type="text" placeholder="position" value="{{ old('position') }}">
                 
             </div>
         </div>
@@ -37,7 +37,7 @@
 
             <div class="control">
 
-                <input class="input {{ $errors->has('phone') ? 'is-danger' : '' }}" type="text" placeholder="phone">
+                <input class="input is-large {{ $errors->has('phone') ? 'is-danger' : '' }}" type="text" placeholder="phone" value="{{ old('phone') }}">
                 
             </div>
         </div>
@@ -52,7 +52,7 @@
 
             <div class="control">
 
-                <button type="submit" class="button is-info is-large">Add User</button>
+                <button type="submit" class="button is-info is-medium">Add User</button>
 
             </div>
         </div>
