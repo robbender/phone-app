@@ -54,7 +54,7 @@
         </p>
         <div class="field is-grouped is-grouped-right">
                 <p class="control">
-                    <a href="/users/{{ $user->id }}/edit" class="button is-info">Edit</a>
+                    <a href="/users/{{ $user->id }}/edit" class="button is-info is-medium">Edit</a>
 
                     {{-- <button type="submit" class="button is-link">Update</button> --}}
                 </p>
@@ -63,7 +63,7 @@
                         @csrf
                         <div class="field">
                         <div class="control">
-                            <button type="submit" class="button is-danger">Delete</button>
+                            <button type="submit" class="button is-danger is-medium">Delete</button>
                         </div>
                         </div>
                     </form>
