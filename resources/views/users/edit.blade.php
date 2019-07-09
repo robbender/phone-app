@@ -25,7 +25,7 @@
     
         <div class="control">
     
-            <input type="text" class="input is-large" name="position" placeholder="Position" value="{{ $user->position }}">
+            <input type="text" class="input is-large" name="position" placeholder="Position" value="{{ $user->position }}" required>
     
          </div>
 
@@ -35,14 +35,14 @@
         
         <div class="control">
         
-        <input type="text" class="input is-large" name="phone" placeholder="Phone" value="{{ $user->phone }}">
+        <input type="text" class="input is-large" name="phone" placeholder="Phone" value="{{ $user->phone }}" required>
         
         </div>
         <br>
 
         <div class="control">
         
-            <input type="file" class="input is-large" name="image" placeholder="Image" value="{{ $user->image }}">
+            <input type="file" class="input is-large" name="image" placeholder="Image" value="{{ $user->image }}" required>
                 
         </div>
 
