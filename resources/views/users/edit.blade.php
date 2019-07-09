@@ -15,7 +15,7 @@
 
         <div class="control">
 
-        <input type="text" class="input" name="name" placeholder="Name" value="{{ $user->name }}">
+        <input type="text" class="input is-large" name="name" placeholder="Name" value="{{ $user->name }}">
 
         </div>
         
@@ -25,7 +25,7 @@
     
         <div class="control">
     
-            <input type="text" class="input" name="position" placeholder="Position" value="{{ $user->position }}">
+            <input type="text" class="input is-large" name="position" placeholder="Position" value="{{ $user->position }}">
     
          </div>
 
@@ -35,14 +35,14 @@
         
         <div class="control">
         
-        <input type="text" class="input" name="phone" placeholder="Phone" value="{{ $user->phone }}">
+        <input type="text" class="input is-large" name="phone" placeholder="Phone" value="{{ $user->phone }}">
         
         </div>
         <br>
         <div class="field">
             <div class="control">
 
-                <button type="submit" class="button is-link">Update</button>
+                <button type="submit" class="button is-link is-large">Update</button>
 
             </div>
 
@@ -59,7 +59,7 @@
         <div class="field">
 
             <div class="control">
-                <button type="submit" class="button is-danger">Delete</button>
+                <button type="submit" class="button is-danger is-large">Delete</button>
 
             </div>
         </div>

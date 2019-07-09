@@ -15,32 +15,32 @@
 
             <div class="control">
 
-            <input type="text" class="input is-large {{ $errors->has('name') ? 'is-danger' : '' }}" name="name" placeholder="name" value="{{ old('name') }}">
+            <input type="text" class="input {{ $errors->has('name') ? 'is-danger' : '' }}" name="name" placeholder="name" value="{{ old('name') }}" required>
 
             </div>
-        </div>
+        {{-- </div> --}}
 
-        <div class="field">
+        {{-- <div class="field">
 
-             <label class="label" type="text" name="position" placeholder="Position" required></label>
+             <label class="label" type="text" name="position"></label> --}}
 
             <div class="control">
 
-                <input class="input is-large {{ $errors->has('position') ? 'is-danger' : '' }}" type="text" placeholder="position" value="{{ old('position') }}">
+                <input type="text" class="input {{ $errors->has('position') ? 'is-danger' : '' }}" name="position" placeholder="position" value="{{ old('position') }}" required>
                 
             </div>
-        </div>
+        {{-- </div> --}}
 
-        <div class="field">
+        {{-- <div class="field">
 
-            <label class="label is-large" type="text" name="phone" placeholder="Phone" required></label>
+            <label class="label is-large" type="text" name="phone"></label> --}}
 
             <div class="control">
 
-                <input class="input is-large {{ $errors->has('phone') ? 'is-danger' : '' }}" type="text" placeholder="phone" value="{{ old('phone') }}">
+                <input type="text" class="input {{ $errors->has('phone') ? 'is-danger' : '' }}" name="phone" placeholder="phone" value="{{ old('phone') }}" required>
                 
             </div>
-        </div>
+        {{-- </div> --}}
 
         <div>
 
@@ -67,7 +67,6 @@
                     <li>{{ $error }}</li>
 
                 @endforeach
-
 
             </ul>
              
