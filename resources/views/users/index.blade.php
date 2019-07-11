@@ -6,19 +6,23 @@
 
     <h1 class="title is-size-1">Directory</h1>
 
+    <form action="/search" method="POST" role="search">
+            @csrf
 
-    <div class="is-grouped is-pulled-right">
-    <div class="field has-addons">
+        <div class="is-grouped is-pulled-right">
+        <div class="field has-addons">
             <div class="control is-horizontal">
-              <input class="input is-large" type="text" placeholder="Find a contact">
+              {{-- <input class="input is-large" type="search" placeholder="Find a contact" name="query"> --}}
+              <input type="search" class="form-control" name="query" placeholder="Search" required>
             </div>
             <div class="control">
-              <a class="button is-info is-large">
+              <button class="button is-info is-large" type="submit" >
                 Search
-              </a>
+              </button>
             </div>
-    </div>
-    </div>
+        </div>
+        </div>
+    </form>
     <br>
     <br>
     <br>

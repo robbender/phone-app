@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Input;
+
 use App\User;
 
 class UsersController extends Controller
@@ -81,5 +83,18 @@ class UsersController extends Controller
         $user->delete();
 
         return redirect('/users');
+    }
+
+    public function search(User $user)
+    {
+        
+        $q = Input::get('query');
+
+        $users = User::where('name', 'LIKE', '%' . $q . '%' )->get();
+        
+        dd($users);
+
+        return view('users.search');
+
     }
 }
