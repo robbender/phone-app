@@ -2,7 +2,7 @@
 
 @section('content')
 
-<p>{{ "/users/{{ $user->id" }} </p>
+<li>{{  }}</li>
 
 
 @endsection
