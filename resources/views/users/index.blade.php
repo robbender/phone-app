@@ -6,7 +6,7 @@
 
     <h1 class="title is-size-1">Directory</h1>
 
-    <form action="/search" method="POST" role="search">
+    <form action="/users/search" method="POST" role="search">
             @csrf
 
         <div class="is-grouped is-pulled-right">
