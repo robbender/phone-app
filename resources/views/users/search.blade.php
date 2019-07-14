@@ -10,7 +10,8 @@
     <p class="subtitle is-size-4 has-text-weight-semibold">
         Results:
     </p>
-        Name: {{ $user->name }}
+        Name: <a href="/users/{{ $user->id }}">{{ $user->name }}</a>
+        {{-- Name: {{ $user->name }} --}}
     </p>
     <p>
         Position: {{ $user->position }}
