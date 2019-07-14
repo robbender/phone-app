@@ -90,7 +90,10 @@ class UsersController extends Controller
         
         $q = Input::get('query');
 
-        $users = User::where('name', 'LIKE', '%' . $q . '%' )->get();
+        $users = User::where('name', 'LIKE', '%' . $q . '%' )
+                    ->orWhere('position','LIKE','%'. $q .'%')
+                    ->orWhere('phone','LIKE','%'. $q .'%')
+                    ->get();
         
         // dd($users);
         // return $users;
