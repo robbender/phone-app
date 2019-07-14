@@ -93,7 +93,7 @@ class UsersController extends Controller
         $users = User::where('name', 'LIKE', '%' . $q . '%' )->get();
         
         // dd($users);
-
+        return $users;
         return view('users.search');
 
     }
