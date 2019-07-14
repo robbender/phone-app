@@ -7,7 +7,7 @@
 
 @foreach ($users as $user)
 
-<li>{{ $users->name }}</li>
+<li>{{ $users }}</li>
 
 @endforeach
 
