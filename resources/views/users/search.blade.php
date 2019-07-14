@@ -7,11 +7,21 @@
 
 @foreach ($users as $user)
 
-<li>{{ $users }}</li>
+    <p class="subtitle is-size-4 has-text-weight-semibold">
+        Results:
+    </p>
+        Name: {{ $user->name }}
+    </p>
+    <p>
+        Position: {{ $user->position }}
+    </p>
+    <p>
+        Phone: {{ $user->phone }}
+    </p>
 
 @endforeach
 
-
+<a href="/users">Back</a>
 
 @endsection
 
