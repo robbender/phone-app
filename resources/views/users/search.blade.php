@@ -4,7 +4,7 @@
 
 <h1>Search Results</h1>
 
-<li>{{  }}</li>
+{{-- <li>{{  }}</li> --}}
 
 
 @endsection

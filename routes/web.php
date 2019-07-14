@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/users/search', 'UsersController@search');
+
 Route::post('/users/search', 'UsersController@search');
 
 
