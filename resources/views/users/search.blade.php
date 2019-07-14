@@ -4,8 +4,11 @@
 
 <h1>Search Results</h1>
 
-{{-- <li>{{  }}</li> --}}
+@foreach ($users as $user)
 
+<li>{{ $users->name }}</li>
+
+@endforeach
 
 @endsection
 
