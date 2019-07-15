@@ -100,4 +100,10 @@ class UsersController extends Controller
         return view('users.search', compact('users'));
 
     }
+    public function storage(User $user)
+    {
+        
+        Storage::disk('local')->put('file.txt', 'Contents');
+
+    }
 }
