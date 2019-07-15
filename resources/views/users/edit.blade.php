@@ -42,7 +42,7 @@
 
         <div class="control">
         
-            <input type="file" class="input is-large" name="image" placeholder="Image" value="{{ $user->image }}" required>
+            <input type="file" class="input is-large" name="image" accept="image/png, image/jpeg" placeholder="Image" value="{{ $user->image }}" required>
                 
         </div>
 
