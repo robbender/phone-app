@@ -38,7 +38,7 @@ class UsersController extends Controller
             'name' => ['required', 'min:2', 'max:120'],
             'position' => ['required', 'min:2'],
             'phone' => ['required', 'min:11', 'numeric'],
-            // 'image' => ['max:1999'],
+            'image' => ['max:1999'],
             // 'size' => ['']
         ]));
 
