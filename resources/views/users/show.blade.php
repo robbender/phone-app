@@ -21,8 +21,20 @@
         <div>
 
             @foreach ($user->tasks as $task)
-                
-                <li>{{ $task->description }}</li>
+
+            <div>
+                <form action="">
+
+                    <label class="checkbox" for="completed">
+
+                        <input type="checkbox" name="completed">
+
+                            {{ $task->description }}
+
+                    </label>
+
+                </form>
+            </div>
 
             @endforeach
         </div>
