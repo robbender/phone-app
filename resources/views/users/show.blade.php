@@ -25,6 +25,7 @@
             <div>
             <form method="POST" action="/tasks/{{ $task->id }}">
                     @method('PATCH')
+                    @csrf
 
                     <label class="checkbox" for="completed">
 
