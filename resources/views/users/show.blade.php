@@ -28,7 +28,7 @@
 
                     <label class="checkbox" for="completed">
 
-                        <input type="checkbox" name="completed">
+                        <input type="checkbox" name="completed" onChange="this.form.submit()">
 
                             {{ $task->description }}
 

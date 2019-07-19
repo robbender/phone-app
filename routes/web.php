@@ -26,3 +26,5 @@ Route::post('/users/search', 'UsersController@search');
 
 Route::resource('users', 'UsersController');
 
+Route::patch('/task/{task}', 'UserTasksController@update');
+
