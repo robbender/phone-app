@@ -9,6 +9,10 @@
         <p>{{ $user->position }}</p>
 
         <p>{{ $user->phone }}</p>
+
+            <p>
+                <a href="/users/{{ $user->id }}/edit">Edit</a>
+            </p>
         
     </div>
 
@@ -24,10 +28,6 @@
         </div>
     
     @endif
-
-    <p>
-    <a href="/users/{{ $user->id }}/edit">Edit</a>
-    </p>
 
 
 @endsection
