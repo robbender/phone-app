@@ -12,6 +12,19 @@
         
     </div>
 
+    @if ($user->tasks->count())
+
+        <div>
+
+            @foreach ($user->tasks as $task)
+                
+                <li>{{ $task->description }}</li>
+
+            @endforeach
+        </div>
+    
+    @endif
+
     <p>
     <a href="/users/{{ $user->id }}/edit">Edit</a>
     </p>
