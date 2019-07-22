@@ -5,11 +5,13 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 class Task extends Model
+
 {
-    public function project()
+
+    public function user()
     {
         
-        return $this->belongTo(Project::class);
+        return $this->belongsTo(User::class);
 
     }
 }
