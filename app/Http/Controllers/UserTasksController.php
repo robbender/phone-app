@@ -4,10 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Task;
+
 class UserTasksController extends Controller
 {
-    public function update()
+    public function update(Task $task)
     {
-        dd('hello');
+        dd($task);
     }
 }
